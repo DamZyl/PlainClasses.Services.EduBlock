@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\PlainClasses.Services.EduBlock.Domain\PlainClasses.Services.EduBlock.Domain.csproj" />
+    <ProjectReference Include="..\PlainClasses.Services.EduBlock.Application\PlainClasses.Services.EduBlock.Application.csproj" />
+  </ItemGroup>
+
+</Project>
