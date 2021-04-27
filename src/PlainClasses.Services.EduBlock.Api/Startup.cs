@@ -3,6 +3,7 @@ using Autofac.Extensions.DependencyInjection;
 using Hellang.Middleware.ProblemDetails;
 using MicroserviceLibrary.Api.Configurations.Extensions;
 using MicroserviceLibrary.Api.Utils;
+using MicroserviceLibrary.Infrastructure.Databases;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,7 @@ namespace PlainClasses.Services.EduBlock.Api
         {
             services.AddSqlConfiguration(Configuration, Consts.DbConfigurationSection);
             services.AddDbContext<EduBlockContext>();
+            services.AddScoped(typeof(IApplicationDbContext), typeof(EduBlockContext));
             
             services.AddControllers();
             services.AddSwagger();
