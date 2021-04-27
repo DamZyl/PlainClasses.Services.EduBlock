@@ -8,5 +8,24 @@
     <ProjectReference Include="..\PlainClasses.Services.EduBlock.Domain\PlainClasses.Services.EduBlock.Domain.csproj" />
     <ProjectReference Include="..\PlainClasses.Services.EduBlock.Application\PlainClasses.Services.EduBlock.Application.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Sql\Configurations" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="MicroserviceLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\PlainClasses.Services.EduBlock.Domain\bin\Debug\netcoreapp3.1\MicroserviceLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
